@@ -1,0 +1,41 @@
+/* MÓVIL */
+@media screen and (max-width: 600px) {
+    /* MAIN */
+    main {
+        /* min-height: 100vh; */
+        padding: 2rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    p {
+        font-size: 2.4rem;
+    }
+    /* HOME ENTRADAS */
+    #blog .entrada-titulo {
+        font-size: 2.8rem;
+    }
+    /* BLOG */
+    .entrada-contenido h2 {
+        font-size: 2rem;
+    }
+    .entrada-contenido h3 {
+        font-size: 1.8rem;
+    }
+
+    /* CONTENEDORES */
+    .contenedor--flex {
+        flex-direction: column;
+    }
+}
+
+/* TABLET */
+@media (max-width: 1200px) {
+    .menu-toggle {
+        display: block; /* Mostrar botón de menú en móviles */
+    }
+
+    .main-navigation {
+        display: none; /* Ocultar menú principal en móviles */
+    }
+}

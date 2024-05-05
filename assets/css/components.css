@@ -1,0 +1,27 @@
+/* BOTONES */
+.contenedor--btn a {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+    background-color: #000;
+    border: 2px solid #000;
+    border-radius: 8px;
+    margin: 40px 0;
+    padding: 20px;
+    transition: ease-in-out .2s;
+}
+.contenedor--btn a:hover {
+    color: #000;
+    background-color: transparent;
+    transform: scale(0.9);
+}
+.contenedor--btn a:active {
+    color: #fff;
+    background-color: var(--color-rojo);
+    border: 2px solid var(--color-rojo);
+}

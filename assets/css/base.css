@@ -1,0 +1,51 @@
+:root {
+    /* COLORES */
+    --color-rojo: #fa4238;
+    --color-anchor: #000;
+    --color-gris: #5E5E5E;
+
+    /* CONTENEDORES */
+    --ancho-maximo: 1200px;
+    --contenedor-flex-gap: 10px;
+
+    /* TEXTO */
+    --fuente-principal: futura-pt, sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: var(--fuente-principal);
+    background-color: #fff;
+}
+/* MAIN */
+main {
+    /* min-height: 100vh; */
+    padding: 4rem;
+}
+h1 {
+    line-height: 1;
+}
+h2 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+p {
+    font-size: 2.4rem;
+    line-height: 1.6;
+}
+a {
+    color: var(--color-anchor);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--color-rojo);
+}
+img {
+    width: 100%;
+}

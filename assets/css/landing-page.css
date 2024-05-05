@@ -1,0 +1,57 @@
+#landing-form.seccion {
+    background-image: url('https://nocuerpo.com/wp-content/uploads/2024/05/FONDO-1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+}
+#landing-form .contenedor--img {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+#landing-form .contenedor--img img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#landing-form .contenedor {
+    width: 100%; /* Asegura que el contenedor tome todo el ancho disponible */
+    max-width: 600px; /* Puedes ajustar esto según tus necesidades */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    color: white; /* Color del texto para todos los elementos dentro del contenedor */
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho/altura */
+}
+
+/* Estilos para las columnas dentro del contenedor */
+#landing-form .contenedor--flex {
+    justify-content: space-between; /* Espacia los elementos uniformemente */
+    margin-bottom: 10px; /* Espacio entre filas de elementos */
+}
+
+/* Estilos para etiquetas y campos de entrada */
+#landing-form .contenedor label {
+    display: block; /* Hace que la etiqueta tome todo el ancho de la columna */
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el campo de entrada */
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+    width: 100%; /* Hace que los inputs tomen todo el ancho disponible */
+    height: 40px; /* Altura fija para los inputs */
+    color: #000; /* Color del texto para los inputs */
+    background-color: #fff; /* Fondo blanco para los inputs */
+    border: 1px solid #ccc; /* Borde sutil para los inputs */
+    padding: 0 5px; /* Padding interno para el texto dentro de los inputs */
+}
+
+/* Estilo específico para el botón de enviar */
+input[type="submit"] {
+    background-color: #000; /* Fondo negro para el botón */
+    color: white; /* Texto blanco para el botón */
+    border: none; /* Sin borde para el botón */
+    cursor: pointer; /* Cursor de mano al pasar sobre el botón */
+}

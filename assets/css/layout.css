@@ -1,0 +1,196 @@
+.site-header {
+    position: -webkit-sticky; /* Para compatibilidad con Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.31);
+    -webkit-box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.31);
+    -moz-box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.31);
+    z-index: 99;
+}
+.header-inner {
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.main-navigation {
+    width: 100%;
+    text-align: center;
+}
+.main-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos del menú */
+    gap: 20px; /* Espacio entre los elementos del menú */
+}
+.main-navigation li {
+    margin: 0;
+    padding: 0;
+}
+.main-navigation a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+}
+.main-navigation a:hover,
+.main-navigation a:focus {
+    background-color: #f0f0f0;
+    color: var(--color-rojo);
+}
+.menu-toggle {
+    display: none; /* Ocultar por defecto, se mostrará en móviles */
+    background: none;
+    border: none;
+    font-size: 24px;
+}
+.search-box {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.search-box input {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 40px;
+    border: 2px solid #000;
+    border-radius: 99px;
+}
+.search-box i {
+    position: absolute;
+    color: #000;
+    font-size: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+.search-submit {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; /* Añadir si es necesario */
+}
+.site-logo {
+    width: 100%;
+    text-align: center;
+}
+.site-logo img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    text-align: center;
+}
+
+/* MENÚ DESPLEGABLE */
+.encabezado--desplegable {
+    display: none;
+    width: 80%;
+    position: absolute;
+    top: 50px; /* Ajusta este valor según la altura de tu cabecera */
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Asegúrate de que el menú desplegable esté sobre otros elementos */
+}
+.menu-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+}
+.menu-close i {
+    color: #fff;
+    font-size: 4rem;
+    cursor: pointer;
+    display: block;
+    text-align: right;
+    margin-bottom: 20px; /* Espacio antes de los enlaces del menú */
+}
+.encabezado--navbar ul {
+    list-style: none;
+    padding: 0;
+}
+.encabezado--navbar ul li {
+    margin-bottom: 10px;
+    padding: 10px 0; /* Espaciado entre elementos del menú */
+}
+.encabezado--navbar ul li a {
+    font-size: 2.4rem; /* Tamaño de la fuente de los enlaces */
+    color: #fff;
+    text-decoration: none;
+    display: block; /* Hacer que el enlace ocupe todo el espacio del <li> */
+}
+.encabezado--navbar ul li a:hover,
+.encabezado--navbar ul li a:focus {
+    background-color: #444; /* Cambia el color de fondo al pasar el mouse */
+}
+
+
+/* FOOTER */
+footer {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #000;
+    padding: 10px;
+}
+
+/* CONTENEDORES */
+.seccion {
+    width: 100%;
+    margin: 0;
+    padding: 2rem 0;
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+.contenedor {
+    width: 100%;
+    display: block;
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+    padding: 0;
+}
+.contenedor--img {
+    font-size: 0;
+    width: 100%;
+}
+.contenedor--img img {
+    width: 100%;
+    height: auto;
+}
+.entrada-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.contenedor--flex {
+    display: flex;
+    gap: var(--contenedor-flex-gap);
+}
+.columna {
+    width: 100%;
+}
+.contenedor--grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajusta este valor para controlar el tamaño mínimo de las columnas */
+    gap: 4rem; /* Espacio entre los elementos del grid */
+    width: 100%;
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+    padding: 0;
+}
